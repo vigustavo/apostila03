@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Gustavo Vieira</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagem/minhafoto.enc" alt="Foto de Gustavo Vieira" class="foto-perfil">
+        
+        <h1>Gustavo Vieira Da Conceição</h1>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <div class="destaque">
+                <p>
+                    Tenho 20 anos e moro em <strong>Goiânia - Goiás</strong>. Tenho experiência com atendimento e vendas na Feira Ripe e atualmente atuo como costureiro.
+                </p>
+            </div>
+            <p>
+                Essas atividades me ajudaram a desenvolver organização, atenção aos detalhes e boa rotina de trabalho. Agora busco uma nova oportunidade profissional como <em>Estagiário de TI</em>, onde eu possa continuar evoluindo.
+            </p>
+        </section>
+
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Instituição</th>
+                        <th>Status / Ano</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Análise e Desenv. de Sistemas</td>
+                        <td>UNIALFA</td>
+                        <td>Cursando (4º Semestre)</td>
+                    </tr>
+                    <tr>
+                        <td>Informática Intermediária</td>
+                        <td>Dimensão Cursos</td>
+                        <td>Concluído (2021)</td>
+                    </tr>
+                    <tr>
+                        <td>Excel Avançado</td>
+                        <td>Dimensão Cursos</td>
+                        <td>Concluído (2021)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            
+            <h3>Linguagens e Tecnologias</h3>
+            <div class="skills-container">
+                <span class="habilidade-item">HTML & CSS</span>
+                <span class="habilidade-item">React</span>
+                <span class="habilidade-item">Node.js</span>
+                <span class="habilidade-item">MySQL</span>
+                <span class="habilidade-item">PostgreSQL</span>
+            </div>
+
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Organização</li>
+                <li>Atenção aos detalhes</li>
+                <li>Atendimento ao cliente</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p class="contato-info">
+                Email: <a href="mailto:gustavovieira900@outlook.com">gustavovieira900@outlook.com</a><br>
+                Telefone: <a href="tel:+5562995092179">(62) 99509-2179</a>
+            </p>
+            
+            <form action="#" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gustavo Vieira. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

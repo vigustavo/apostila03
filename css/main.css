@@ -1,0 +1,213 @@
+/* --- RESET E CONFIGURAÇÕES GLOBAIS --- */
+/* Zerando margens e ativando border-box para facilitar o layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Fonte Open Sans e cor de fundo suave */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; 
+}
+
+/* --- HEADER --- */
+/* Gradiente conforme pedido nos estilos avançados */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Foto redonda com borda branca para destacar */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+/* --- MENU DE NAVEGAÇÃO --- */
+/* Flexbox para alinhar os itens do menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Para não quebrar em telas menores */
+}
+
+/* Estilo dos links */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background-color 0.3s; /* Efeito suave */
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- ESTILO DAS SEÇÕES --- */
+main {
+    padding: 2rem 1rem;
+}
+
+/* Cards brancos centralizados */
+section {
+    background: white;
+    margin: 2rem auto; 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    max-width: 800px; 
+}
+
+section h2 {
+    color: #764ba2;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Destaque "Sobre Mim" com gradiente (Item extra do checklist) */
+.destaque {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e74c3c;
+}
+
+/* --- TABELA --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+/* --- HABILIDADES --- */
+.skills-container {
+    margin: 1rem 0 2rem 0;
+}
+
+/* Estilo de tags para as skills */
+.habilidade-item {
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #e9ecef;
+    font-weight: bold;
+    color: #555;
+}
+
+/* --- FORMULÁRIO --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+}
+
+input, textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+/* Destaque ao clicar no campo (focus) */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+/* Botão com gradiente */
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+    margin-top: 1rem;
+    align-self: flex-start;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+}
+
+.contato-info a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- RODAPÉ --- */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    /* Menu empilhado no celular */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    /* Ajuste da fonte da tabela */
+    th, td {
+        font-size: 0.9rem;
+    }
+}
